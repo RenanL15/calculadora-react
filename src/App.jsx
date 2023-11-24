@@ -20,9 +20,7 @@ export default function App() {
           </span>
           <input
             type="text"
-            onBlur={(e) => e.target.focus()}
             value={numbers.length === 0 ? 0 : numbers.join("").slice(0, 12)}
-            autoFocus
             maxLength={4}
             className="pointer-events-none caret-transparent bg-transparent text-end text-5xl font-bold w-full"
           />
