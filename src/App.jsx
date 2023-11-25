@@ -3,6 +3,7 @@ import Buttons from "./components/Buttons";
 
 export default function App() {
   const [numbers, setNumbers] = useState([]);
+  const [numbers2, setNumbers2] = useState([]);
   const [operator, setOperator] = useState("");
 
   // useEffect(() => {
@@ -15,8 +16,7 @@ export default function App() {
         <div className="flex flex-col bg-white mb-8 rounded-lg px-4 py-2">
           <span
             className={`ml-auto ${operator != "" ? "visible" : "invisible"}`}>
-            {numbers.length === 0 ? 0 : numbers.join("")}{" "}
-            {operator ? operator : 0}
+            {numbers.length === 0 ? 0 : numbers.join("")} {operator}
           </span>
           <input
             type="text"

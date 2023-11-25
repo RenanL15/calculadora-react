@@ -18,7 +18,7 @@ export default function Buttons({
   return (
     <div className="grid grid-cols-4 gap-4 text-center text-2xl">
       <button
-        onClick={() => setNumbers([...numbers, 7])}
+        onClick={() => setNumbers([...numbers, "%"])}
         className="p-5 bg-yellow-500 hover:bg-yellow-400 rounded-lg">
         <FaPercentage className="m-auto" />
       </button>
