@@ -5,10 +5,11 @@ export default function App() {
   const [numbers, setNumbers] = useState([]);
   const [numbers2, setNumbers2] = useState([]);
   const [operator, setOperator] = useState("");
+  const [result, setResult] = useState(null);
 
   // useEffect(() => {
-  //   setNumbers(numbers.slice(0, 10));
-  // }, [numbers]);
+  //   setNumbers2(numbers);
+  // }, [operator]);
 
   return (
     <main className="min-h-screen flex justify-center items-center bg-gray-400">
@@ -20,7 +21,17 @@ export default function App() {
           </span>
           <input
             type="text"
-            value={numbers.length === 0 ? 0 : numbers.join("").slice(0, 12)}
+            value={
+              result === null
+                ? operator === ""
+                  ? numbers.length === 0
+                    ? 0
+                    : numbers.join("").slice(0, 12)
+                  : numbers2.join("").slice(0, 12)
+                : result != "Infinity"
+                ? result
+                : "Cannot divide by 0"
+            }
             maxLength={4}
             className="pointer-events-none caret-transparent bg-transparent text-end text-5xl font-bold w-full"
           />
@@ -28,10 +39,17 @@ export default function App() {
         <Buttons
           numbers={numbers}
           setNumbers={setNumbers}
+          numbers2={numbers2}
+          setNumbers2={setNumbers2}
           operator={operator}
           setOperator={setOperator}
+          result={result}
+          setResult={setResult}
         />
       </div>
+      {/* <div className="p-5 bg-yellow-500 text-4xl">
+        {result != "Infinity" ? result : "Cannot divide by 0"}
+      </div> */}
     </main>
   );
 }
