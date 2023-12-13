@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "num1": "85",
+      "operator": "-",
+      "num2": "99",
+      "result": -14,
+      "id": 1
+    },
+    {
+      "num1": "85",
+      "operator": "x",
+      "num2": "9",
+      "result": 765,
+      "id": 2
+    },
+    {
+      "num1": "888",
+      "operator": "÷",
+      "num2": "578",
+      "result": "1.53633218",
+      "id": 3
+    },
+    {
+      "num1": "98",
+      "operator": "x",
+      "num2": "6",
+      "result": 588,
+      "id": 4
+    }
+  ]
+}

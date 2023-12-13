@@ -6,7 +6,34 @@
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 1em;
+}
+
 input,
 button {
   outline: none;
+}
+
+.history {
+  /* border: solid 5px red; */
+  animation: history 400ms ease-in-out forwards;
+}
+
+@keyframes history {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(130%);
+  }
 }
