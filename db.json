@@ -27,6 +27,874 @@
       "num2": "6",
       "result": 588,
       "id": 4
+    },
+    {
+      "num1": "89",
+      "operator": "x",
+      "num2": "6",
+      "result": 534,
+      "id": 5
+    },
+    {
+      "num1": "85",
+      "operator": "-",
+      "num2": "3",
+      "result": 82,
+      "id": 6
+    },
+    {
+      "num1": "71",
+      "operator": "÷",
+      "num2": "9",
+      "result": "7.88888889",
+      "id": 7
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "6",
+      "result": 15,
+      "id": 8
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "6",
+      "result": 0,
+      "id": 9
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "6",
+      "result": 15,
+      "id": 10
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 15,
+      "id": 11
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 15,
+      "id": 12
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 13
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "6",
+      "result": 6,
+      "id": 14
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 15
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "6",
+      "result": 15,
+      "id": 16
+    },
+    {
+      "num1": "",
+      "operator": "÷",
+      "num2": "666666699",
+      "result": "0.00000000",
+      "id": 17
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 18
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 19
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 20
+    },
+    {
+      "num1": "96",
+      "operator": "x",
+      "num2": "6",
+      "result": 576,
+      "id": 21
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "6",
+      "result": 0,
+      "id": 22
+    },
+    {
+      "num1": "6",
+      "operator": "x",
+      "num2": "66",
+      "result": 396,
+      "id": 23
+    },
+    {
+      "num1": "6",
+      "operator": "+",
+      "num2": "",
+      "result": 6,
+      "id": 24
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "8",
+      "result": 64,
+      "id": 25
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "1",
+      "result": 8,
+      "id": 26
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "8",
+      "result": 64,
+      "id": 27
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "888888",
+      "result": 7111104,
+      "id": 28
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "8",
+      "result": 64,
+      "id": 29
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "8",
+      "result": 0,
+      "id": 30
+    },
+    {
+      "num1": "6",
+      "operator": "+",
+      "num2": "6",
+      "result": 12,
+      "id": 31
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "6",
+      "result": 6,
+      "id": 32
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 33
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "1",
+      "result": 0,
+      "id": 34
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 35
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "3",
+      "result": 0,
+      "id": 36
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "9",
+      "result": 72,
+      "id": 37
+    },
+    {
+      "num1": "79",
+      "operator": "x",
+      "num2": "9",
+      "result": 711,
+      "id": 38
+    },
+    {
+      "num1": "2",
+      "operator": "x",
+      "num2": "22",
+      "result": 44,
+      "id": 39
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 44,
+      "id": 40
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 41
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "9999",
+      "result": 10098,
+      "id": 42
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 43
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 44
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 45
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 46
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 47
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "65666",
+      "result": 18,
+      "id": 48
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 49
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 50
+    },
+    {
+      "num1": "66",
+      "operator": "x",
+      "num2": "6655999",
+      "result": 439295934,
+      "id": 51
+    },
+    {
+      "num1": "99",
+      "operator": "+",
+      "num2": "99",
+      "result": 198,
+      "id": 52
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "9",
+      "result": 207,
+      "id": 53
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "1",
+      "result": 208,
+      "id": 54
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 55
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "9",
+      "result": 27,
+      "id": 56
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 57
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "9",
+      "result": 27,
+      "id": 58
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 59
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 60
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "999",
+      "result": 1017,
+      "id": 61
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 62
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 90,
+      "id": 63
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 64
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 27,
+      "id": 65
+    },
+    {
+      "num1": "27",
+      "operator": "+",
+      "num2": "27",
+      "result": 54,
+      "id": 66
+    },
+    {
+      "num1": "87",
+      "operator": "+",
+      "num2": "87",
+      "result": 174,
+      "id": 67
+    },
+    {
+      "num1": "8",
+      "operator": "+",
+      "num2": "8",
+      "result": 16,
+      "id": 68
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "8",
+      "result": 24,
+      "id": 69
+    },
+    {
+      "num1": "8",
+      "operator": "+",
+      "num2": "8",
+      "result": 16,
+      "id": 70
+    },
+    {
+      "num1": "96",
+      "operator": "+",
+      "num2": "5",
+      "result": 101,
+      "id": 71
+    },
+    {
+      "num1": "55",
+      "operator": "+",
+      "num2": "6",
+      "result": 61,
+      "id": 72
+    },
+    {
+      "num1": "88",
+      "operator": "+",
+      "num2": "12",
+      "result": 100,
+      "id": 73
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "9855896778",
+      "result": 9855896878,
+      "id": 74
+    },
+    {
+      "num1": "58",
+      "operator": "+",
+      "num2": "5",
+      "result": 63,
+      "id": 75
+    },
+    {
+      "num1": "85",
+      "operator": "x",
+      "num2": "6",
+      "result": 510,
+      "id": 76
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "8",
+      "result": 518,
+      "id": 77
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "6",
+      "result": 524,
+      "id": 78
+    },
+    {
+      "num1": "88",
+      "operator": "x",
+      "num2": "88",
+      "result": 7744,
+      "id": 79
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "55",
+      "result": 7799,
+      "id": 80
+    },
+    {
+      "num1": "8",
+      "operator": "x",
+      "num2": "9",
+      "result": 72,
+      "id": 81
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "66",
+      "result": 138,
+      "id": 82
+    },
+    {
+      "num1": "85",
+      "operator": "+",
+      "num2": "9",
+      "result": 94,
+      "id": 83
+    },
+    {
+      "num1": "85",
+      "operator": "x",
+      "num2": "6",
+      "result": 510,
+      "id": 84
+    },
+    {
+      "num1": "96",
+      "operator": "+",
+      "num2": "4",
+      "result": 100,
+      "id": 85
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "2",
+      "result": 0,
+      "id": 86
+    },
+    {
+      "num1": "55",
+      "operator": "x",
+      "num2": "55",
+      "result": 3025,
+      "id": 87
+    },
+    {
+      "num1": "58",
+      "operator": "+",
+      "num2": "2",
+      "result": 60,
+      "id": 88
+    },
+    {
+      "num1": "55",
+      "operator": "+",
+      "num2": "6",
+      "result": 61,
+      "id": 89
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "98",
+      "result": 159,
+      "id": 90
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 159,
+      "id": 91
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 159,
+      "id": 92
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 159,
+      "id": 93
+    },
+    {
+      "num1": "8",
+      "operator": "+",
+      "num2": "8",
+      "result": 16,
+      "id": 94
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 95
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 96
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "6",
+      "result": 16,
+      "id": 97
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 98
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "9",
+      "result": 90,
+      "id": 99
+    },
+    {
+      "num1": "96",
+      "operator": "+",
+      "num2": "5",
+      "result": 101,
+      "id": 100
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 101
+    },
+    {
+      "num1": "6",
+      "operator": "+",
+      "num2": "6",
+      "result": 12,
+      "id": 102
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 103
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "2",
+      "result": 12,
+      "id": 104
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "5",
+      "result": 17,
+      "id": 105
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "79",
+      "result": 96,
+      "id": 106
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 107
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 108
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 109
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 110
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 111
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 112
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 113
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 114
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 115
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 116
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 117
+    },
+    {
+      "num1": "",
+      "operator": "",
+      "num2": "",
+      "result": 0,
+      "id": 118
+    },
+    {
+      "num1": "9",
+      "operator": "+",
+      "num2": "9",
+      "result": 18,
+      "id": 119
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 120
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 121
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "3",
+      "result": 0,
+      "id": 122
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 123
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 124
+    },
+    {
+      "num1": "",
+      "operator": "x",
+      "num2": "109",
+      "result": 0,
+      "id": 125
+    },
+    {
+      "num1": "9",
+      "operator": "x",
+      "num2": "9",
+      "result": 81,
+      "id": 126
+    },
+    {
+      "num1": "5",
+      "operator": "+",
+      "num2": "5",
+      "result": 10,
+      "id": 127
+    },
+    {
+      "num1": "",
+      "operator": "+",
+      "num2": "10",
+      "result": 20,
+      "id": 128
     }
   ]
 }
