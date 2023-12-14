@@ -21,16 +21,8 @@ export default function Buttons({
   result,
   setResult,
 }) {
-  // const handleHistory = () => {
-  //   axios.post("http://localhost:3000/posts", {
-  //     num1: numbers.join(""),
-  //     operator: operator,
-  //     num2: numbers2.join(""),
-  //     result: result,
-  //   });
-  // };
   useEffect(() => {
-    if (result != null) {
+    if (result != "") {
       axios
         .post("http://localhost:3000/posts", {
           num1: numbers.join(""),
@@ -39,8 +31,11 @@ export default function Buttons({
           result: result,
         })
         .then(() => {
+          console.log(result);
+          console.log(numbers);
+          console.log(numbers2);
           setNumbers([]);
-          setNumbers2([]);
+          // setNumbers2([]);
           setOperator("");
         });
     }
@@ -49,21 +44,22 @@ export default function Buttons({
     <div className="grid grid-cols-4 gap-4 text-2xl text-center">
       <button
         onClick={() => {
-          setNumbers([...numbers, "%"]);
+          // setOperator("");
+          // setNumbers([]);
+          setNumbers2([]);
+          setResult("");
         }}
-        className="p-5 bg-yellow-500 rounded-lg hover:bg-yellow-400"
-      >
-        <FaPercentage className="m-auto" />
+        className="p-5 font-bold bg-yellow-500 rounded-lg hover:bg-yellow-400">
+        CE
       </button>
       <button
         onClick={() => {
           setOperator("");
           setNumbers([]);
           setNumbers2([]);
-          setResult(null);
+          setResult("");
         }}
-        className="p-5 font-bold bg-yellow-500 rounded-lg hover:bg-yellow-400"
-      >
+        className="p-5 font-bold bg-yellow-500 rounded-lg hover:bg-yellow-400">
         C
       </button>
       <button
@@ -74,24 +70,28 @@ export default function Buttons({
             ? (popArr.pop(), setNumbers(popArr))
             : (popArr2.pop(), setNumbers2(popArr2));
         }}
-        className="p-5 bg-yellow-500 rounded-lg hover:bg-yellow-400"
-      >
+        className="p-5 bg-yellow-500 rounded-lg hover:bg-yellow-400">
         <FaBackspace className="m-auto" />
       </button>
       <button
-        onClick={() => setOperator("÷")}
-        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500"
-      >
+        onClick={() => {
+          if (result != "") {
+            setNumbers([result]);
+          }
+          setNumbers2([]);
+          setOperator("÷");
+        }}
+        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500">
         <FaDivide className="m-auto" />
       </button>
       <button
         onClick={() => {
+          setResult("");
           operator === ""
             ? setNumbers([...numbers, 7])
             : setNumbers2([...numbers2, 7]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         7
       </button>
       <button
@@ -100,8 +100,7 @@ export default function Buttons({
             ? setNumbers([...numbers, 8])
             : setNumbers2([...numbers2, 8]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         8
       </button>
       <button
@@ -110,14 +109,18 @@ export default function Buttons({
             ? setNumbers([...numbers, 9])
             : setNumbers2([...numbers2, 9]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         9
       </button>
       <button
-        onClick={() => setOperator("x")}
-        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500"
-      >
+        onClick={() => {
+          if (result != "") {
+            setNumbers([result]);
+          }
+          setNumbers2([]);
+          setOperator("x");
+        }}
+        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500">
         <FaTimes className="m-auto" />
       </button>
       <button
@@ -126,8 +129,7 @@ export default function Buttons({
             ? setNumbers([...numbers, 4])
             : setNumbers2([...numbers2, 4]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         4
       </button>
       <button
@@ -136,8 +138,7 @@ export default function Buttons({
             ? setNumbers([...numbers, 5])
             : setNumbers2([...numbers2, 5]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         5
       </button>
       <button
@@ -146,14 +147,18 @@ export default function Buttons({
             ? setNumbers([...numbers, 6])
             : setNumbers2([...numbers2, 6]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         6
       </button>
       <button
-        onClick={() => setOperator("+")}
-        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500"
-      >
+        onClick={() => {
+          if (result != "") {
+            setNumbers([result]);
+          }
+          setNumbers2([]);
+          setOperator("+");
+        }}
+        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500">
         <FaPlus className="m-auto" />
       </button>
       <button
@@ -162,8 +167,7 @@ export default function Buttons({
             ? setNumbers([...numbers, 1])
             : setNumbers2([...numbers2, 1]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         1
       </button>
       <button
@@ -172,8 +176,7 @@ export default function Buttons({
             ? setNumbers([...numbers, 2])
             : setNumbers2([...numbers2, 2]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         2
       </button>
       <button
@@ -182,14 +185,18 @@ export default function Buttons({
             ? setNumbers([...numbers, 3])
             : setNumbers2([...numbers2, 3]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         3
       </button>
       <button
-        onClick={() => setOperator("-")}
-        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500"
-      >
+        onClick={() => {
+          if (result != "") {
+            setNumbers([result]);
+          }
+          setNumbers2([]);
+          setOperator("-");
+        }}
+        className="p-5 text-white rounded-lg bg-slate-400 hover:bg-slate-500">
         <FaMinus className="m-auto" />
       </button>
       <button
@@ -200,8 +207,7 @@ export default function Buttons({
             ? setNumbers(shArr)
             : numbers.length > 0 && setNumbers(["-", ...numbers]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         <PiPlusMinusBold className="m-auto" />
       </button>
       <button
@@ -214,8 +220,7 @@ export default function Buttons({
             ? setNumbers2([0])
             : setNumbers2([...numbers2, 0]);
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         0
       </button>
       <button
@@ -224,9 +229,16 @@ export default function Buttons({
             (numbers.length === 0
               ? setNumbers([0, "."])
               : setNumbers([...numbers, "."]));
+
+          if (!numbers2.includes(".")) {
+            if (numbers2.length === 0) {
+              setNumbers2([0, "."]);
+            } else {
+              setNumbers2([...numbers2, "."]);
+            }
+          }
         }}
-        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300"
-      >
+        className="p-5 rounded-lg bg-zinc-200 hover:bg-zinc-300">
         .
       </button>
       <button
@@ -235,22 +247,34 @@ export default function Buttons({
           if (operator != "") {
             switch (operator) {
               case "+":
-                result === null
+                result === ""
                   ? setResult(
                       Number(numbers.join("")) + Number(numbers2.join(""))
                     )
-                  : setResult(
-                      Number(result) + Number(numbers2.join(""))
-                    );
+                  : setResult(Number(result) + Number(numbers2.join("")));
                 break;
               case "-":
-                setResult(numbers.join("") - numbers2.join(""));
+                result === ""
+                  ? setResult(
+                      Number(numbers.join("")) - Number(numbers2.join(""))
+                    )
+                  : setResult(Number(result) - Number(numbers2.join("")));
                 break;
               case "x":
-                setResult(numbers.join("") * numbers2.join(""));
+                result === ""
+                  ? setResult(
+                      Number(numbers.join("")) * Number(numbers2.join(""))
+                    )
+                  : setResult(Number(result) * Number(numbers2.join("")));
                 break;
               case "÷":
-                setResult((numbers.join("") / numbers2.join("")).toFixed(8));
+                result === ""
+                  ? setResult(
+                      Number(numbers.join("")) / Number(numbers2.join(""))
+                    )
+                  : setResult(
+                      Number(result) / Number(numbers2.join("")).toFixed(2)
+                    );
                 break;
               default:
                 setNumbers("Invalid");
@@ -258,8 +282,7 @@ export default function Buttons({
             }
           }
         }}
-        className="p-5 text-white bg-red-700 rounded-lg hover:bg-red-800"
-      >
+        className="p-5 text-white bg-red-700 rounded-lg hover:bg-red-800">
         <FaEquals className="m-auto" />
       </button>
     </div>
